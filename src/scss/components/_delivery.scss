@@ -1,0 +1,141 @@
+.delivery {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 40px;
+
+  @media (max-width: 531px) {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    padding: 70px 0 40px 0;
+    text-align: center;
+    color: #0d0d0d;
+    font-size: 34px;
+
+    @media (max-width: 675px) {
+      padding-bottom: 0;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    color: #0d0d0d;
+    font-size: 34px;
+    padding: 30px 0 70px 0;
+
+    @media (max-width: 975px) {
+      padding-bottom: 0;
+    }
+
+    @media (max-width: 680px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &-top-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+
+    @media (max-width: 1270px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+
+    &-item {
+      width: 250px;
+
+      @media (max-width: 680px) {
+        padding-top: 55px;
+      }
+
+      &-img {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      &-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .payment-rules {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 975px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+
+    .payment-rule {
+      text-align: center;
+      max-width: 370px;
+
+      @media (max-width: 975px) {
+        margin-top: 30px;
+      }
+
+      &-img {
+        max-width: 140px;
+        margin: 0 auto;
+      }
+
+      &-heading {
+        padding: 25px 0 20px 0;
+        font-size: 20px;
+        line-height: 22px;
+      }
+
+      &-text {
+        color: #666;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0 30px;
+        font-weight: 300;
+
+        a {
+          text-decoration: underline;
+          color: #666;
+        }
+      }
+    }
+  }
+
+  .payment-info-block {
+    padding: 40px 80px;
+
+    .payment-info-text {
+      font-weight: 300;
+      line-height: 20px;
+      padding-bottom: 50px;
+
+      @media (max-width: 975px) {
+        display: none;
+      }
+    }
+
+    .payment-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 1055px) {
+        display: none;
+      }
+    }
+  }
+}
